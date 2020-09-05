@@ -1,0 +1,18 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      PruebaApp
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item>
+    <ion-input type="text" required placeholder="Email" [(ngModel)]="email"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input type="password" required placeholder="Password" [(ngModel)]="password"></ion-input>
+  </ion-item>
+  <ion-button type="submit" color="primary" (click)="logIn()">Login</ion-button>
+  <ion-button color="secondary" (click)="clear()">Limpiar</ion-button>
+</ion-content>
